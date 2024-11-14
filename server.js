@@ -11,7 +11,7 @@ function displayLobby() {
     console.log(
         chalk.cyan(
             figlet.textSync('Kingdom', {
-                font: 'O8',
+                font: 'Doom',
                 horizontalLayout: 'default',
                 verticalLayout: 'default'
             })
@@ -23,7 +23,7 @@ function displayLobby() {
     console.log(line);
 
     // 게임 이름
-    console.log(chalk.yellowBright.bold('Kingdom에 오신것을 환영합니다!'));
+    console.log(chalk.yellowBright.bold('Kingdom에 오신것을 환영합니다!🎃'));
 
     // 설명 텍스트
     console.log(chalk.green('옵션을 선택해주세요.'));
@@ -81,3 +81,8 @@ function start() {
 
 // 게임 실행
 start();
+
+export function startLobbyCallback() {
+    displayLobby();
+    handleUserInput();
+}
