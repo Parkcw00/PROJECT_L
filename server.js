@@ -9,7 +9,7 @@ function displayLobby() {
 
     // 타이틀 텍스트
     console.log(
-        chalk.cyan(
+        chalk.greenBright(
             figlet.textSync('Kingdom', {
                 font: 'Doom',
                 horizontalLayout: 'default',
